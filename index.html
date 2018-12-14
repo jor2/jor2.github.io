@@ -21,12 +21,14 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#work-experience">Experience</a></li>
         <li><a href="#interests">Interests</a></li>
+        <li><a href="#references">References</a></li>
       </ul>
-      <form class="navbar-form navbar-left" action="/action_page.php">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search" name="search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+      <form method="get" action="https://www.google.com/search?g=[value from input-field]" target="_blank" style="margin-top: 1.25em; margin-left: .5em">
+        <input type="text" name="q" size="25" style="color:#808080; width: 5em"
+        maxlength="255"
+        onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+        <input type="submit" value="Go!" />
+        <input type="hidden" name="sitesearch" value="" /></td></tr>
       </form>
     </div>
   </nav>
@@ -104,28 +106,28 @@
         <div class="panel-group">
           <div class="panel panel-default" id="secondYearProject">
             <div class="panel-heading" id="secondYearProjectTitle"><b>Second Year Project</b></div>
-            <div class="panel-body"><b style="font-size: 1.5em; color: black">Java based Web Application using Play Framework</b>
+            <div class="panel-body"><b style="font-size: 1.5em; color: black">Java Web Appl using Play Framework</b>
               <hr class="primary">
               <img src="imgs/videoGameStore.jpg" alt="Video Game Store" style="width: 100%; border: .25em solid black">
               <hr class="primary">
               <h2 class="projectSummary"><b>Summary</b></h2>
-              <p class="videoGameStoreParagraph">I worked on this project alongside 2 classmates when I was in Second Year in ITT Dublin.<span id="dots3">...</span>
+              <p class="videoGameStoreParagraph">I did this project with two other peers from my class in ITT.<span id="dots3">...</span>
               <span id="more3">
-                We had 13 weeks to create a server side Java Based Web Application using an Oracle Database Backend and Play Framework to run the service.
-                We began by making a list of user requirements and use cases so that we had a clear idea of the type of site we would be building. We ultimately decided
-                to make a Video Game Store Site which would allow users to register, add games to a basket and checkout with their items.<br><br>
+                We created a dynamically generating web application that connected to Oracle db's and was built on the play framework platform.
+                We started by creating all our use cases, schema etc so that we could have a good idea of what we were going to build before we built it.
+                We created a video games website that would allow a user to buy games, build up loyalty rewards etc. The admin could update the stock, 
+                remove or add games and reviews.<br><br>
                 
-                <b style="color: red; float: left;">Additional functionality included:</b><br>
-                <b class="videoGameStoreCustomList">- Review a Game</b><br>
-                <b class="videoGameStoreCustomList">- Use Loyalty Points</b><br>
-                <b class="videoGameStoreCustomList">- Add, Update and Delete Games</b><br>
+                <b style="color: red; float: left;">Functionality:</b><br>
+                <b class="videoGameStoreCustomList">- Reviews</b><br>
+                <b class="videoGameStoreCustomList">- Loyalty Points</b><br>
+                <b class="videoGameStoreCustomList">- Add, Update and Delete</b><br>
                 <b class="videoGameStoreCustomList">- Add Credit Cards to Account</b><br><br>
                 
-                Firstly, we created a static HTML site before converting the site to Scala language within Play Framework. Each week we would meet with our Project
-                Supervisor to discuss our progress and potential extras that we could add to the site. After 13 weeks we presented our finished product to a number
-                of lecturers and got the chance to demo all of the functionality we added to the web app.<br><br>
-                This was the first elapsed project I had worked on as part of a team and it gave me a great understanding of how to manage time and deadlines while also
-                improving my communication skills.<br><br>
+                We had a static version of the site available to us prior to starting the app from our Previous web dev class. We used this template to create the games site.
+                We familiarized ourselves a lot more with play, sql, java and scala.
+                Firstly, we created a static HTML site before converting the site to Scala language within Play Framework. Each week we would meet with our Project<br><br>
+              <div><u><b>Grade</b></u>: A</div>                
               </span></p>
               <button class="btn btn-info" onclick="showMore3()" id="myBtn3">Read more</button>
             </div>
@@ -261,6 +263,52 @@
               <td>Ruby on Rails</td>
               <td>Support</td>
               <td>Figuring things out</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <div class="references" id="references">
+    <section>
+      <h1>References</h1>
+      <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <thead>
+            <tr>
+              <th>Functionality</th>
+              <th>Site</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            <tr>
+              <td>Navbar</td>
+              <td><a href="https://www.w3schools.com/css/css_navbar.asp"><b>https://www.w3schools.com/css/css_navbar.asp</b></a></td>
+            </tr>
+            <tr>
+              <td>Hero Image</td>
+              <td><a href="https://www.w3schools.com/howto/howto_css_hero_image.asp"><b>https://www.w3schools.com/howto/howto_css_hero_image.asp</b></a></td>
+            </tr>
+            <tr>
+              <td>Skill Bar</td>
+              <td><a href="https://www.w3schools.com/howto/howto_css_skill_bar.asp"><b>https://www.w3schools.com/howto/howto_css_skill_bar.asp</b></a></td>
+            </tr>
+            <tr>
+              <td>Carousels</td>
+              <td><a href="https://www.w3schools.com/bootstrap/bootstrap_carousel.asp"><b>https://www.w3schools.com/bootstrap/bootstrap_carousel.asp</b></a></td>
+            </tr>
+            <tr>
+              <td>Read More, and Read Less</td>
+              <td><a href="https://www.w3schools.com/howto/howto_js_read_more.asp"><b>https://www.w3schools.com/howto/howto_js_read_more.asp</b></a></td>
+            </tr>
+            <tr>
+              <td>Tables</td>
+              <td><a href="https://www.w3schools.com/bootstrap/bootstrap_tables.asp"><b>https://www.w3schools.com/bootstrap/bootstrap_tables.asp</b></a></td>
             </tr>
           </tbody>
         </table>

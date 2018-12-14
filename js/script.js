@@ -56,3 +56,8 @@ $(window).on("load resize ", function() {
   var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
   $('.tbl-header').css({'padding-right':scrollWidth});
 }).resize();
+
+document.getElementById('searchform').onsubmit = function() {
+    window.location = 'http://www.google.com/search?q=jor2:github.io ' + document.getElementById('test').value
+    return false;
+}
